@@ -4,15 +4,22 @@
 }
 body {
 	font-family: "Roboto";
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: 300;
+	line-height: 2em;
 }
 h1 {
 	text-align: center;
 	font-family: "Roboto Slab";
 	color: #3c4858;
 }
+h4 {
+	font-weight: 400;
+	color: #3c4858;
+}
 #container {
+	position: absolute;
+	color: #3c485893;
 	display: flex;
 	flex-direction: column;
 	margin-left: 15%;
@@ -20,8 +27,9 @@ h1 {
 	text-align: left;
 }
 
-#container > div {
-	padding-left: 0.5em;
+#container > div .hidden {
+	position: relative;
+	margin-left: 45px;
 }
 
 #container > div .inline:hover {
@@ -30,19 +38,28 @@ h1 {
 }
 
 .hidden .form_field .select_box {
-    cursor: pointer;
+	cursor: pointer;
 	border: none;
 	padding: 5px 100px 5px 5px;
 	border-bottom: 1px solid #3c4858;
 }
-
+.hidden .form_field input {
+	cursor: pointer;
+	border: none;
+	border-bottom: 1px solid #3c4858;
+}
+.hidden .next {
+	padding: 15px;
+}
 .hidden .next .next_button {
 	border: none;
 	background: none;
 	line-height: 28px;
 	padding: 0 10px;
 	border-radius: 4px;
-	font-size: 12px;
+	font-size: 10px;
+	font-weight: 600;
+	color: #3c4858c2;
 }
 .hidden .next .next_button:hover {
 	cursor: pointer;
@@ -56,8 +73,8 @@ h1 {
 }
 
 .inline div {
-	font-size: 13px;
-	font-weight: 400;
+    font-size: 11px;
+	font-weight: 500;
 }
 
 .list {
@@ -76,3 +93,8 @@ h1 {
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+.value_name{
+    font-size: 9px;
+    font-weight: 500;
+}
+

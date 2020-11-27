@@ -278,7 +278,7 @@
                 </div>
 
             </div>
-            <div id="">
+            <div id="result_box">
 
                 <div class="inline">
                     <div class="list">
@@ -287,55 +287,58 @@
                     <div class="side_text">Wynik</div>
                 </div>
 
-                <div class="hidden"></div>
-                <div id="results">
-                    <h4>Kwota nadpłaconych rat:<br>
-                        <span id="red_text">
-                            {} PLN<br>
-                        </span>
-                        Kwota jaką bank musi zwrócić przy unieważnieniu kredytu:<br>
-                        <span id="green_text">
-                            {} PLN <br>
-                        </span>
-                    </h4>
-                    <div id="result_buttons">
-                        <button id="pdf_save">ZAPISZ SWOJĄ KALKULACJE W PDF</button><br>
-                        <button id="retrieve_money">SPRAWDŹ JAK ODZYSKAĆ PIENIĄDZE</button><br>
-                        <button id="save_result">ZAPISZ WYNIK I ZAMÓW BEZPŁATNĄ KONSULTACJĘ Z PRAWNIKIEM</button><br>
+                <div class="hidden">
+                    <div id="results">
+                        <h4>Kwota nadpłaconych rat:<br>
+                            <span id="red_text">
+                                {} PLN<br>
+                            </span>
+                            Kwota jaką bank musi zwrócić przy unieważnieniu kredytu:<br>
+                            <span id="green_text">
+                                {} PLN <br>
+                            </span>
+                        </h4>
+                        <div id="result_buttons">
+                            <button id="pdf_save">ZAPISZ SWOJĄ KALKULACJE W PDF</button><br>
+                            <button id="retrieve_money">SPRAWDŹ JAK ODZYSKAĆ PIENIĄDZE</button><br>
+                            <button id="save_result">ZAPISZ WYNIK I ZAMÓW BEZPŁATNĄ KONSULTACJĘ Z
+                                PRAWNIKIEM</button><br>
+                        </div>
+
+                        <h3>Pozostałe obliczenia:</h3>
+                        <table>
+                            <tr>
+                                <th>Nazwa</th>
+                                <th>Wynik</th>
+                            </tr>
+                            <tr>
+                                <th>Kwota udzielonego kredytu</th>
+                                <th>{}</th>
+                            </tr>
+                            <tr>
+                                <th>wota jaką do tej pory wpłaciłeś do banku</th>
+                                <th>{}</th>
+                            </tr>
+                            <tr>
+                                <th>Kwota jaką powinieneś wpłacić przy zalożeniu, że kredyt ma charakter złotówkowy</th>
+                                <th>{}</th>
+                            </tr>
+                            <tr>
+                                <th>Akutalne zadłużenie według banku</th>
+                                <th>{}</th>
+                            </tr>
+                            <tr>
+                                <th>Zmnniejszenie salda zadłużenia bez klauzul niedozwolonych</th>
+                                <th>{}</th>
+                            </tr>
+                        </table>
+
+                        <span id="plain_text">Kalkulator podaje przybliżony wynik</span>
+                        <div id="again">
+                            <button id="again_button">ZACZNIJ JESZCZE RAZ</button>
+                        </div>
                     </div>
 
-                    <h3>Pozostałe obliczenia:</h3>
-                    <table>
-                        <tr>
-                            <th>Nazwa</th>
-                            <th>Wynik</th>
-                        </tr>
-                        <tr>
-                            <th>Kwota udzielonego kredytu</th>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <th>wota jaką do tej pory wpłaciłeś do banku</th>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <th>Kwota jaką powinieneś wpłacić przy zalożeniu, że kredyt ma charakter złotówkowy</th>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <th>Akutalne zadłużenie według banku</th>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <th>Zmnniejszenie salda zadłużenia bez klauzul niedozwolonych</th>
-                            <th></th>
-                        </tr>
-                    </table>
-
-                    <span id="plain_text">Kalkulator podaje przybliżony wynik</span>
-                    <div id="again">
-                        <button id="again_button">ZACZNIJ JESZCZE RAZ</button>
-                    </div>
                 </div>
 
             </div>
