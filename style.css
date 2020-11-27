@@ -1,0 +1,78 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: "Roboto";
+	font-size: 14px;
+	font-weight: 300;
+}
+h1 {
+	text-align: center;
+	font-family: "Roboto Slab";
+	color: #3c4858;
+}
+#container {
+	display: flex;
+	flex-direction: column;
+	margin-left: 15%;
+	margin-right: 10%;
+	text-align: left;
+}
+
+#container > div {
+	padding-left: 0.5em;
+}
+
+#container > div .inline:hover {
+	cursor: pointer;
+	background-color: #eee;
+}
+
+.hidden .form_field .select_box {
+    cursor: pointer;
+	border: none;
+	padding: 5px 100px 5px 5px;
+	border-bottom: 1px solid #3c4858;
+}
+
+.hidden .next .next_button {
+	border: none;
+	background: none;
+	line-height: 28px;
+	padding: 0 10px;
+	border-radius: 4px;
+	font-size: 12px;
+}
+.hidden .next .next_button:hover {
+	cursor: pointer;
+	background-color: #eee;
+}
+.inline {
+	display: flex;
+	flex-direction: row;
+	line-height: 1.5em;
+	padding: 16px;
+}
+
+.inline div {
+	font-size: 13px;
+	font-weight: 400;
+}
+
+.list {
+	background-color: #0000008a;
+	color: #fff;
+	border-radius: 50%;
+	height: 20px;
+	width: 20px;
+	position: relative;
+	flex-shrink: 0;
+	margin-right: 10px;
+}
+.list .icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
