@@ -123,7 +123,7 @@ h4 {
 	box-shadow: 0.5px 0.5px 1px 0.5px rgba(172, 169, 169, 0.616);
 	cursor: pointer;
 }
-#check{
+#check {
 	margin: 20px 5px;
 }
 #check-button {
@@ -135,7 +135,7 @@ h4 {
 	font-size: 9px;
 	cursor: pointer;
 }
-#results-text{
+#results-text {
 	font-size: 15px;
 	font-weight: bold;
 }
@@ -147,7 +147,8 @@ h4 {
 	color: green;
 	line-height: 3em;
 }
-#result-buttons button, #again button{
+#result-buttons button,
+#again button {
 	border-radius: 4px;
 	font-size: 10px;
 	padding: 10px 20px;
@@ -159,47 +160,81 @@ h4 {
 #pdf-save {
 	background-color: #9c27b0;
 }
-#retrieve-money{
+#retrieve-money {
 	background-color: #f73030;
 }
-#save-result{
+#save-result {
 	background-color: #4caf50;
 }
-#again-button{
-	background-color:#ff9800 ;
+#again-button {
+	background-color: #ff9800;
 }
-#table-count{
+#table-count {
 	border-collapse: collapse;
-	font-size:10px;
+	font-size: 10px;
 	font-weight: lighter;
 	border-radius: 2px;
-	box-shadow: 0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12);;
-	
+	box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+		0 8px 10px 1px rgba(0, 0, 0, 0.14),
+		0 3px 14px 2px rgba(0, 0, 0, 0.12);
 }
-#table-count tr{
+#table-count tr {
 	border-bottom: 0.5px solid #3c485842;
 }
-#table-count tr th:first-of-type, #table-count tr td:first-of-type{
+#table-count tr th:first-of-type,
+#table-count tr td:first-of-type {
 	padding-left: 24px;
 }
-#table-count tr th:last-of-type, #table-count tr td:last-of-type{
+#table-count tr th:last-of-type,
+#table-count tr td:last-of-type {
 	padding-left: 5px;
 	padding-right: 24px;
 }
-#table-count th{
+#table-count th {
 	line-height: 4em;
 }
-#table-count td{
+#table-count td {
 	line-height: 3em;
 	color: #000000b4;
 	font-size: 11px;
 }
-.bold{
-	color:#3c4858;
+.bold {
+	color: #3c4858;
 	font-size: 15px;
 	line-height: 3em;
 	margin-bottom: 0.3em;
 }
-#plain-text{
+#plain-text {
 	line-height: 4em;
+}
+/* input animation */
+
+.input-div {
+	position: relative;
+	height: 2em;
+	margin-bottom: 1.5rem;
+	margin-top: 1.5rem;
+}
+.input-div input {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.label {
+	z-index: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition: 0.3s;
+}
+.input-input:focus + .label, .input-input:valid + .label{
+	z-index: 10;
+	font-size: 10px;
+	top: -2em;
+}
+.hidden{
+	display: none;
+}
+.show{
+	color: red;
 }
