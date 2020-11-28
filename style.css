@@ -37,13 +37,13 @@ h4 {
 	background-color: #eee;
 }
 
-.hidden .form_field .select_box {
+.hidden .form-field .select-box {
 	cursor: pointer;
 	border: none;
 	padding: 5px 100px 5px 5px;
 	border-bottom: 1px solid #3c4858;
 }
-.hidden .form_field input {
+.hidden .form-field input {
 	cursor: pointer;
 	border: none;
 	border-bottom: 1px solid #3c4858;
@@ -51,7 +51,7 @@ h4 {
 .hidden .next {
 	padding: 15px;
 }
-.hidden .next .next_button {
+.hidden .next .next-button {
 	border: none;
 	background: none;
 	line-height: 28px;
@@ -59,9 +59,9 @@ h4 {
 	border-radius: 4px;
 	font-size: 10px;
 	font-weight: 600;
-	color: #3c4858c2;
+	color: #3c4858da;
 }
-.hidden .next .next_button:hover {
+.hidden .next .next-button:hover {
 	cursor: pointer;
 	background-color: #eee;
 }
@@ -73,7 +73,7 @@ h4 {
 }
 
 .inline div {
-    font-size: 11px;
+	font-size: 11px;
 	font-weight: 500;
 }
 
@@ -87,14 +87,119 @@ h4 {
 	flex-shrink: 0;
 	margin-right: 10px;
 }
+.list-done {
+	background-color: #3f51b5;
+}
 .list .icon {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
-.value_name{
-    font-size: 9px;
-    font-weight: 500;
+.value-name {
+	font-size: 9px;
+	font-weight: 500;
 }
-
+.add-new .add-button {
+	color: white;
+	border-radius: 4px;
+	background-color: #ff4081;
+	border: none;
+	padding: 8px;
+	font-size: 11px;
+	font-weight: bold;
+	box-shadow: 0.5px 0.5px 1px 0.5px rgba(172, 169, 169, 0.616);
+	margin-right: 4px;
+	cursor: pointer;
+}
+.add-new .delete-button {
+	color: white;
+	border-radius: 4px;
+	background-color: #f73030;
+	border: none;
+	padding: 8px;
+	font-size: 11px;
+	font-weight: bold;
+	box-shadow: 0.5px 0.5px 1px 0.5px rgba(172, 169, 169, 0.616);
+	cursor: pointer;
+}
+#check{
+	margin: 20px 5px;
+}
+#check-button {
+	padding: 10px 20px 10px 20px;
+	border: none;
+	color: white;
+	background-color: #4caf50;
+	border-radius: 4px;
+	font-size: 9px;
+	cursor: pointer;
+}
+#results-text{
+	font-size: 15px;
+	font-weight: bold;
+}
+#red-text {
+	color: red;
+	line-height: 3em;
+}
+#green-text {
+	color: green;
+	line-height: 3em;
+}
+#result-buttons button, #again button{
+	border-radius: 4px;
+	font-size: 10px;
+	padding: 10px 20px;
+	color: white;
+	border: none;
+	margin-bottom: 10px;
+	box-shadow: 0.5px 0.5px 1px 0.5px rgba(172, 169, 169, 0.616);
+}
+#pdf-save {
+	background-color: #9c27b0;
+}
+#retrieve-money{
+	background-color: #f73030;
+}
+#save-result{
+	background-color: #4caf50;
+}
+#again-button{
+	background-color:#ff9800 ;
+}
+#table-count{
+	border-collapse: collapse;
+	font-size:10px;
+	font-weight: lighter;
+	border-radius: 2px;
+	box-shadow: 0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12);;
+	
+}
+#table-count tr{
+	border-bottom: 0.5px solid #3c485842;
+}
+#table-count tr th:first-of-type, #table-count tr td:first-of-type{
+	padding-left: 24px;
+}
+#table-count tr th:last-of-type, #table-count tr td:last-of-type{
+	padding-left: 5px;
+	padding-right: 24px;
+}
+#table-count th{
+	line-height: 4em;
+}
+#table-count td{
+	line-height: 3em;
+	color: #000000b4;
+	font-size: 11px;
+}
+.bold{
+	color:#3c4858;
+	font-size: 15px;
+	line-height: 3em;
+	margin-bottom: 0.3em;
+}
+#plain-text{
+	line-height: 4em;
+}
