@@ -130,84 +130,134 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div id="">
+            <div id="">
 
-                    <div class="inline">
-                        <div class="list">
-                            <div class="icon">4</div>
-                        </div>
-                        <div class="side-text">Kurs {}</div>
+                <div class="inline">
+                    <div class="list">
+                        <div class="icon">4</div>
                     </div>
-
-                    <div class="hidden">
-                        <h4 class="inside-text">Podaj kurs {} z dnia wzięcia kredytu.</h4>
-                        <div class="form-field">
-                            <div class="input-div">
-                                <input class="input-input" type="number" name="exchange-value" id="exchange-value"
-                                    required>
-                                <label for="exchange-value" class="label">Kurs {} *</label>
-                            </div>
-                            <div class="value-name">np. 2.2015</div>
-                        </div>
-
-
-                        <div class="next">
-                            <button class="next-button">
-                                Dalej
-                            </button>
-                        </div>
-                    </div>
-
+                    <div class="side-text">Kurs {}</div>
                 </div>
-                <div id="">
 
-                    <div class="inline">
-                        <div class="list">
-                            <div class="icon">5</div>
+                <div class="hidden">
+                    <h4 class="inside-text">Podaj kurs {} z dnia wzięcia kredytu.</h4>
+                    <div class="form-field">
+                        <div class="input-div">
+                            <input class="input-input" type="number" name="exchange-value" id="exchange-value" required>
+                            <label for="exchange-value" class="label">Kurs {} *</label>
                         </div>
-                        <div class="side-text">Marża</div>
+                        <div class="value-name">np. 2.2015</div>
                     </div>
 
-                    <div class="hidden">
-                        <h4 class="inside-text">odaj marżę w %, która zostanie doliczona do stawki LIBOR 3M {} </h4>
-                        <div class="form-field">
-                            <div class="input-div">
-                                <input class="input-input" type="number" name="margin-value" id="margin-value" required>
-                                <label for="margin-value" class="label">Marża *</label>
-                            </div>
-                            <div class="value-name">
-                                np. 1.15%
-                            </div>
-                        </div>
 
-                        <div class="next">
-                            <button class="next-button">
-                                Dalej
-                            </button>
-                        </div>
+                    <div class="next">
+                        <button class="next-button">
+                            Dalej
+                        </button>
                     </div>
-
                 </div>
-                <div id="">
 
-                    <div class="inline">
-                        <div class="list">
-                            <div class="icon">6</div>
+            </div>
+            <div id="">
+
+                <div class="inline">
+                    <div class="list">
+                        <div class="icon">5</div>
+                    </div>
+                    <div class="side-text">Marża</div>
+                </div>
+
+                <div class="hidden">
+                    <h4 class="inside-text">odaj marżę w %, która zostanie doliczona do stawki LIBOR 3M {} </h4>
+                    <div class="form-field">
+                        <div class="input-div">
+                            <input class="input-input" type="number" name="margin-value" id="margin-value" required>
+                            <label for="margin-value" class="label">Marża *</label>
                         </div>
-                        <div class="side-text">Liczba (ilość) rat</div>
+                        <div class="value-name">
+                            np. 1.15%
+                        </div>
                     </div>
 
-                    <div class="hidden">
-                        <h4 class="inside-text">Podaj liczbę rat w miesiącach, w jakich kredyt podlegał spłacie</h4>
+                    <div class="next">
+                        <button class="next-button">
+                            Dalej
+                        </button>
+                    </div>
+                </div>
 
-                        <div class="form-field">
+            </div>
+            <div id="">
+
+                <div class="inline">
+                    <div class="list">
+                        <div class="icon">6</div>
+                    </div>
+                    <div class="side-text">Liczba (ilość) rat</div>
+                </div>
+
+                <div class="hidden">
+                    <h4 class="inside-text">Podaj liczbę rat w miesiącach, w jakich kredyt podlegał spłacie</h4>
+
+                    <div class="form-field">
+                        <div class="input-div">
+                            <input class="input-input" type="number" name="loan-value" id="loan-value" required>
+                            <label for="loan-value" class="label">Ilość rat *</label>
+                        </div>
+                        <div class="value-name">np. 360</div>
+
+                    </div>
+
+
+
+                    <div class="next">
+                        <button class="next-button">
+                            Dalej
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div id="">
+
+                <div class="inline">
+                    <div class="list">
+                        <div class="icon">7</div>
+                    </div>
+                    <div class="side-text">Wcześniejsza spłata</div>
+                </div>
+
+                <div class="hidden">
+                    <h4 class="inside-text">Czy kredyt był spłacony wcześniej?</h4>
+
+                    <div class="form-field">
+                        <div class="value-name">
+                            Wcześniejsza spłata *
+                        </div>
+                        <select class="select-box">
+                            <option value="Nie" class="option">Nie</option>
+                            <option value="Tak" class="option">Tak</option>
+                        </select>
+
+                        <div class="input-box">
+                            <div class="input-div">
+                                <input class="input-input" type="date" name="date3" id="date-loan" required>
+                                <label for="date3" class="label">Wybierz datę</label>
+                            </div>
+
                             <div class="input-div">
                                 <input class="input-input" type="number" name="loan-value" id="loan-value" required>
-                                <label for="loan-value" class="label">Ilość rat *</label>
+                                <label for="loan-value" class="label">Kwota w PLN *</label>
                             </div>
-                            <div class="value-name">np. 360</div>
 
+                        </div>
+                        <div class="value-name">np. 150 000</div>
+
+                        <div class="add-new">
+                            <button id="add-loan" class="add-button">Dodaj kolejną</button>
+                            <button id="delete-loan" class="delete-button">Usuń ostatnią</button>
                         </div>
 
 
@@ -217,156 +267,107 @@
                                 Dalej
                             </button>
                         </div>
+
                     </div>
 
                 </div>
-                <div id="">
+            </div>
+            <div id="">
 
-                    <div class="inline">
-                        <div class="list">
-                            <div class="icon">7</div>
-                        </div>
-                        <div class="side-text">Wcześniejsza spłata</div>
+                <div class="inline">
+                    <div class="list">
+                        <div class="icon">8</div>
+                    </div>
+                    <div class="side-text">Typ rat</div>
+                </div>
+
+                <div class="hidden">
+                    <h4 class="inside-text">Wybierz system spłaty kredytu</h4>
+
+                    <div class="form-field">
+
+                        <div class="value-name">Raty *</div>
+
+                        <select class="select-box">
+                            <option value="Równe" class="option">Równe</option>
+                            <option value="Malejące" class="option">Malejące</option>
+                        </select>
+                    </div>
+                    <div id="check">
+                        <button id="check-button"> SPRAWDŹ WYNIK
+                        </button>
+
                     </div>
 
-                    <div class="hidden">
-                        <h4 class="inside-text">Czy kredyt był spłacony wcześniej?</h4>
+                </div>
 
-                        <div class="form-field">
-                            <div class="value-name">
-                                Wcześniejsza spłata *
-                            </div>
-                            <select class="select-box">
-                                <option value="Nie" class="option">Nie</option>
-                                <option value="Tak" class="option">Tak</option>
-                            </select>
+            </div>
+            <div id="result-box">
 
-                            <div class="input-box">
-                                <div class="input-div">
-                                    <input class="input-input" type="date" name="date3" id="date-loan" required>
-                                    <label for="date3" class="label">Wybierz datę</label>
-                                </div>
-
-                                <div class="input-div">
-                                    <input class="input-input" type="number" name="loan-value" id="loan-value" required>
-                                    <label for="loan-value" class="label">Kwota w PLN *</label>
-                                </div>
-
-                            </div>
-                            <div class="value-name">np. 150 000</div>
-
-                            <div class="add-new">
-                                <button id="add-loan" class="add-button">Dodaj kolejną</button>
-                                <button id="delete-loan" class="delete-button">Usuń ostatnią</button>
-                            </div>
-
-
-
-                            <div class="next">
-                                <button class="next-button">
-                                    Dalej
-                                </button>
-                            </div>
-
-                        </div>
-
+                <div class="inline">
+                    <div class="list">
+                        <div class="icon">9</div>
                     </div>
-                    <div id="">
+                    <div class="side-text">Wynik</div>
+                </div>
 
-                        <div class="inline">
-                            <div class="list">
-                                <div class="icon">8</div>
-                            </div>
-                            <div class="side-text">Typ rat</div>
+                <div class="hidden">
+                    <div id="results">
+                        <h4 id="results-text">Kwota nadpłaconych rat:<br>
+                            <span id="red-text">
+                                {} PLN<br>
+                            </span>
+                            Kwota jaką bank musi zwrócić przy unieważnieniu kredytu:<br>
+                            <span id="green-text">
+                                {} PLN <br>
+                            </span>
+                        </h4>
+                        <div id="result-buttons">
+                            <button id="pdf-save">ZAPISZ SWOJĄ KALKULACJE W PDF</button><br>
+                            <button id="retrieve-money">SPRAWDŹ JAK ODZYSKAĆ PIENIĄDZE</button><br>
+                            <button id="save-result">ZAPISZ WYNIK I ZAMÓW BEZPŁATNĄ KONSULTACJĘ Z
+                                PRAWNIKIEM</button><br>
                         </div>
 
-                        <div class="hidden">
-                            <h4 class="inside-text">Wybierz system spłaty kredytu</h4>
+                        <h3 class="bold">Pozostałe obliczenia:</h3>
+                        <table id="table-count">
+                            <tr>
+                                <th>Nazwa</th>
+                                <th>Wynik</th>
+                            </tr>
+                            <tr>
+                                <td>Kwota udzielonego kredytu</td>
+                                <td>{}</td>
+                            </tr>
+                            <tr>
+                                <td>wota jaką do tej pory wpłaciłeś do banku</td>
+                                <td>{}</td>
+                            </tr>
+                            <tr>
+                                <td>Kwota jaką powinieneś wpłacić przy zalożeniu, że kredyt ma charakter
+                                    złotówkowy
+                                </td>
+                                <td>{}</td>
+                            </tr>
+                            <tr>
+                                <td>Akutalne zadłużenie według banku</td>
+                                <td>{}</td>
+                            </tr>
+                            <tr>
+                                <td>Zmnniejszenie salda zadłużenia bez klauzul niedozwolonych</td>
+                                <td>{}</td>
+                            </tr>
+                        </table>
 
-                            <div class="form-field">
-
-                                <div class="value-name">Raty *</div>
-
-                                <select class="select-box">
-                                    <option value="Równe" class="option">Równe</option>
-                                    <option value="Malejące" class="option">Malejące</option>
-                                </select>
-                            </div>
-                            <div id="check">
-                                <button id="check-button"> SPRAWDŹ WYNIK
-                                </button>
-
-                            </div>
-
+                        <span id="plain-text">Kalkulator podaje przybliżony wynik</span>
+                        <div id="again">
+                            <button id="again-button">ZACZNIJ JESZCZE RAZ</button>
                         </div>
-
                     </div>
-                    <div id="result-box">
 
-                        <div class="inline">
-                            <div class="list">
-                                <div class="icon">9</div>
-                            </div>
-                            <div class="side-text">Wynik</div>
-                        </div>
+                </div>
 
-                        <div class="hidden">
-                            <div id="results">
-                                <h4 id="results-text">Kwota nadpłaconych rat:<br>
-                                    <span id="red-text">
-                                        {} PLN<br>
-                                    </span>
-                                    Kwota jaką bank musi zwrócić przy unieważnieniu kredytu:<br>
-                                    <span id="green-text">
-                                        {} PLN <br>
-                                    </span>
-                                </h4>
-                                <div id="result-buttons">
-                                    <button id="pdf-save">ZAPISZ SWOJĄ KALKULACJE W PDF</button><br>
-                                    <button id="retrieve-money">SPRAWDŹ JAK ODZYSKAĆ PIENIĄDZE</button><br>
-                                    <button id="save-result">ZAPISZ WYNIK I ZAMÓW BEZPŁATNĄ KONSULTACJĘ Z
-                                        PRAWNIKIEM</button><br>
-                                </div>
-
-                                <h3 class="bold">Pozostałe obliczenia:</h3>
-                                <table id="table-count">
-                                    <tr>
-                                        <th>Nazwa</th>
-                                        <th>Wynik</th>
-                                    </tr>
-                                    <tr>
-                                        <td>Kwota udzielonego kredytu</td>
-                                        <td>{}</td>
-                                    </tr>
-                                    <tr>
-                                        <td>wota jaką do tej pory wpłaciłeś do banku</td>
-                                        <td>{}</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Kwota jaką powinieneś wpłacić przy zalożeniu, że kredyt ma charakter
-                                            złotówkowy
-                                        </td>
-                                        <td>{}</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Akutalne zadłużenie według banku</td>
-                                        <td>{}</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Zmnniejszenie salda zadłużenia bez klauzul niedozwolonych</td>
-                                        <td>{}</td>
-                                    </tr>
-                                </table>
-
-                                <span id="plain-text">Kalkulator podaje przybliżony wynik</span>
-                                <div id="again">
-                                    <button id="again-button">ZACZNIJ JESZCZE RAZ</button>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
+            </div>
 
 
         </form>
